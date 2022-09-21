@@ -2,7 +2,6 @@ from flask import Flask, jsonify
 from flask_restful import Api
 from flask_cors import CORS
 from apis.books import HelloWorld, SearchBooks, Transactions,ListOfPeople,TotalRentGen, PersonCollection, BetweenDateRange
-from pymongo import MongoClient
 app = Flask(__name__)
 api = Api(app)
 
@@ -22,4 +21,4 @@ api.add_resource(BetweenDateRange, "/between-dates")
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
