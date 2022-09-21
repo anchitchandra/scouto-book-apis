@@ -23,7 +23,7 @@
     ### params:
         book_name : str | imp
         person_name : str | imp
-        issued_date : str | imp
+        returned_date : str | imp
 
 ## API to get to list of peoples issued to book
     POST : https://scouto-apis.herokuapp.com/people-list
