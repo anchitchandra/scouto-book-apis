@@ -5,7 +5,7 @@ import random
 class MongoAPI:
     def __init__(self, collection):
         
-        self.client  = MongoClient("mongodb+srv://root:root@scouto.fq6vieu.mongodb.net/?retryWrites=true&w=majority")
+        self.client  = MongoClient("mongodb+srv://{user}:{password}@scouto.fq6vieu.mongodb.net/?retryWrites=true&w=majority")
         self.db = self.client.test
         database = "books"
         cursor = self.client[database]
